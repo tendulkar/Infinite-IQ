@@ -1,0 +1,6 @@
+# intellij automatically created files
+.idea
+*.iml
+
+#dependent node_modules should be resolved by npm
+node_modules
