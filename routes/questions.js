@@ -9,7 +9,16 @@ var router = require('express').Router;
  *  body : question, options, auth info
  */
 router.post('/', function(req, res, next){
+    var question =  Question(req.body.question),
+        options = req.body.options;
+        user = req.body.user;
 
+    QuestionHandler.add(question, options, user, function(err, result){
+        if(err){
+            res.status(err.code).json({'error': 'unable to create the question'});
+        }
+        res.status(201).json({'success': 'true'});
+    });
 });
 
 
