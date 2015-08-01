@@ -1,6 +1,7 @@
 /**
  * Created by Yugandhar Nanda on 29-07-2015.
  */
+var router = require('express').Router();
 
 
 /**
@@ -17,3 +18,5 @@ router.put('/:optionId', function(req, res, next){
 router.delete('/:optionId', function(req, res, next){
 
 });
+
+module.exports = router;

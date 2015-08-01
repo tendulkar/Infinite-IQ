@@ -1,7 +1,7 @@
 /**
  * Created by Yugandhar Nanda on 29-07-2015.
  */
-var router = require('express').Router;
+var router = require('express').Router();
 
 
 /**
@@ -47,3 +47,5 @@ router.put('/:questionId', function(req, res, next){
 router.delete('/:questionId', function(req, res, next){
 
 });
+
+module.exports = router;

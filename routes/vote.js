@@ -1,7 +1,7 @@
 /**
  * Created by Yugandhar Nanda on 29-07-2015.
  */
-var router = require('express').Router;
+var router = require('express').Router();
 
 
 /**
@@ -26,3 +26,6 @@ router.post('/comment/:commentId', function(req, res, next){
 router.post('/option/:optionId', function(req, res, next){
 
 });
+
+
+module.exports = router;

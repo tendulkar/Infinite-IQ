@@ -33,6 +33,6 @@ app.use('/auth/roles', roles);
 app.use('/api/question', questions);
 app.use('/api/comments', comments);
 app.use('/api/options', choices);
-app.user('/api/vote', vote);
+app.use('/api/vote', vote);
 
 module.exports = app;

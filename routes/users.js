@@ -42,4 +42,5 @@ router.get('/:userId/role/:roleId', function(req, res, next){
 router.post('/:userId/role/:roleId', function(req, res, next){
 
 });
+
 module.exports = router;
